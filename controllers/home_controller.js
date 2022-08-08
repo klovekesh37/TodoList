@@ -1,5 +1,7 @@
 module.exports.home=function(req,res){
     return res.render('home',{
-        title:'ToDo List'
+        title:'ToDo List',
+        toDo:toDoList
     });
 }
+
