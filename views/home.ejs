@@ -12,9 +12,16 @@
         </form>
 
         <ul>
-            <li>
-                <%= toDo.des %>
-            </li>
+            <% for(let i of todo_list){ %>
+                <li>
+                    <h3>
+                        <%= i.des %>
+                    </h3>
+                    <p>Date: <%=i.date %></p>
+                </li>
+
+            <%} %>
         </ul>
+
     </body>
 </html>

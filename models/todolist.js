@@ -6,9 +6,10 @@ const todoSchema=new mongoose.Schema({
         required:true
     },
     date:{
-        type:Date,
+        type:String,
         required:true
     }
 });
 
 const ToDo=mongoose.model('ToDo',todoSchema);
+module.exports=ToDo;
