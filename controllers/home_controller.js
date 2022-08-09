@@ -7,7 +7,7 @@ module.exports.home=function(req,res){
             console.log("Error in fetching contact from db");
             return;
         }
-        console.log(todolistfetch);
+        // console.log(todolistfetch);
         return  res.render("home",
         {
             title:"ToDo list",

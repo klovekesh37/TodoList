@@ -1,27 +1,39 @@
 <html>
     <head>
         <title><%=title%></title>
+        <link rel="stylesheet" href="/css/style.css">
     </head>
     <body>
-        <h1>ToDO List App</h1>
 
-        <form action="/add-list" method="post">
-            <input type="text" name="description" required>
-            <input type="date" name="time" required>
-            <button type="submit">Add</button>
-        </form>
+        <div id="centre">
+            <h1 class="heading">ToDO List App</h1>
+            
+            <div>
+                <form action="/add-list" method="post">
+                    <input type="text" name="description" required>
+                    <input type="date" name="time" required>
+                    <button type="submit">Add</button>
+                </form>
 
-        <ul>
-            <% for(let i of todo_list){ %>
-                <li>
-                    <h3>
-                        <%= i.des %>
-                    </h3>
-                    <p>Date: <%=i.date %></p>
-                </li>
+            </div>
+           
 
-            <%} %>
-        </ul>
+            <ul>
+                <% for(let i of todo_list){ %>
+                    <li>
+                        <h3>
+                            <%= i.des %>
+                        </h3>
+                        <p>Date: <%=i.date %></p>
+                        <a href="/delete-contact/?id=<%= i.id %>">
+                            <button>Delete</button>
+                        </a>
+                    </li>
+
+                <%} %>
+            </ul>
+        </div>
+        
 
     </body>
 </html>
