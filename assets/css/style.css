@@ -8,3 +8,29 @@ li{
     list-style: none;
     margin: 0;
 }
+
+.list{
+    display: flex;
+
+}
+.input-data{
+    width: 400px;
+    height: auto;
+    margin: auto;
+    padding: 2%;
+}
+
+.input-data input[type='text']{
+    width: 100%;
+    border: none;
+    padding: 2%;
+}
+
+.input-data input[type='date']{
+    width: 50%;
+    
+}
+
+.list li{
+    display: flexs;
+}

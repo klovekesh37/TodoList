@@ -8,6 +8,10 @@ const todoSchema=new mongoose.Schema({
     date:{
         type:String,
         required:true
+    },
+    category:{
+        type:String,
+        required:true
     }
 });
 

@@ -8,7 +8,7 @@ const deleteController=require("../controllers/deleteController");
 router.get("/", homeController.home);
 
 router.use('/add-list',addListController.addList);
-app.use("/delete-contact".deleteController)
+router.use("/delete-contact",deleteController.delete);
 
 
 module.exports=router;

@@ -8,30 +8,43 @@
         <div id="centre">
             <h1 class="heading">ToDO List App</h1>
             
-            <div>
+            <div class="input-data">
                 <form action="/add-list" method="post">
-                    <input type="text" name="description" required>
-                    <input type="date" name="time" required>
+                    <label for="Descrip">Description</label>
+                    <input type="text" id="descrip" name="description" required>
+                    <label for="dated">Date</label>
+                    <input type="date" id="dated" name="time" required>
+                    <label for="category">Category</label>
+                    <select name="category" id="category">
+                        <option value="personal">Personal</option>
+                        <option value="school">School</option>
+                        <option value="Work">Work</option>
+                        <option value="other">Other</option>
+                    </select>
                     <button type="submit">Add</button>
                 </form>
 
             </div>
            
+            <div class="list">
+                <ul>
+                    <% for(let i of todo_list){ %>
+                        <li>
+                            <h3>
+                                <%= i.des %>
+                            </h3>
+                            <p>Date: <%=i.date %></p>
+                            <h5><%= i.category %></h5>
+                            <a href="/delete-contact/?id=<%= i.id %>">
+                                <button>Delete</button>
+                            </a>
+                        </li>
+    
+                    <%} %>
+                </ul>
+            </div>
 
-            <ul>
-                <% for(let i of todo_list){ %>
-                    <li>
-                        <h3>
-                            <%= i.des %>
-                        </h3>
-                        <p>Date: <%=i.date %></p>
-                        <a href="/delete-contact/?id=<%= i.id %>">
-                            <button>Delete</button>
-                        </a>
-                    </li>
-
-                <%} %>
-            </ul>
+          
         </div>
         
 
