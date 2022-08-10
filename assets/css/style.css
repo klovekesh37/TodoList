@@ -1,8 +1,23 @@
 body{
     margin: 0;
-    background-color: rgb(222, 176, 231);
     text-align: center;
+    background-color: rgb(136, 129, 129);
+    font-family: sans-serif;
 }
+
+#centre{
+    background-color: white;
+    margin: auto;
+    width: 500px;
+    height: auto;
+    margin-top: 5%;
+}
+
+.heading{
+    padding: 15px;
+    color: rgb(36, 7, 7);
+}
+
 
 li{
     list-style: none;
@@ -11,6 +26,8 @@ li{
 
 .list{
     display: flex;
+    margin: auto;
+    width: 400px;
 
 }
 .input-data{
@@ -18,12 +35,14 @@ li{
     height: auto;
     margin: auto;
     padding: 2%;
+    display: flex;
 }
 
 .input-data input[type='text']{
     width: 100%;
     border: none;
     padding: 2%;
+    border: 1px solid gray;
 }
 
 .input-data input[type='date']{
