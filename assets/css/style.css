@@ -19,37 +19,159 @@ body{
 }
 
 
+
+.input-data{
+    width: 100%;
+    height: auto;
+    margin: auto;
+}
+
+.input-data form{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+
+.des-input{
+    width: 100%;
+    border-top: 1.5px solid grey;
+    border-bottom: 1.5px solid grey;
+}
+
+
+.des-input label{
+    float: left;
+    padding: 3px;
+    margin-left: 5px;
+    color: gray;
+}
+
+.des-input input{
+    width: 100%;
+    border: none;
+    padding: 3%;
+}
+
+.des-input input:focus{
+    border: none;
+    outline: none;
+    background-color: rgb(198, 198, 209);
+}
+
+
+
+.cat-input{
+    width: 49.5%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border-bottom: 1px solid grey;
+    border-right: 1px solid grey;
+}
+
+.cat-input label{
+    padding: 3px;
+    margin-left: 25px;
+    align-items: center;
+    color: gray;
+}
+
+.cat-input select{
+    width: 100%;
+    border: none;
+    padding: 3%;
+}
+
+.cat-input select:focus{
+    border: none;
+    outline: none;
+    background-color: rgb(198, 198, 209);
+}
+
+
+
+
+.date-input{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    border-bottom: 1.5px solid grey;
+    
+    
+}
+
+.date-input label{
+    padding: 3px;
+    margin-left: 25px;
+    color: gray;
+}
+
+.date-input input{
+    width: 100%;
+    border: none;
+    padding: 3%;
+}
+
+.date-input input:focus{
+    border: none;
+    outline: none;
+    background-color: rgb(198, 198, 209);
+}
+
+.input-data form button{
+    margin-left: 40%;
+    margin-top: 6%;
+    padding: 18px;
+    background-color: rgb(189, 181, 181);
+    border: none;
+    border-radius: 5%;
+}
+
+.input-data form button:hover{
+    cursor: pointer;
+    background-color: green;
+}
+
 li{
     list-style: none;
     margin: 0;
 }
 
 .list{
-    display: flex;
-    margin: auto;
-    width: 400px;
-
-}
-.input-data{
-    width: 400px;
-    height: auto;
-    margin: auto;
-    padding: 2%;
-    display: flex;
+    width: 500px;
 }
 
-.input-data input[type='text']{
+li{
+    display: inline;
+}
+ul{
+    white-space:nowrap;
+    overflow-x:hidden;
+    margin: 0;
+    padding: 0;
+    margin: auto;
+}
+
+.content{
+    display: flex;
+    flex-direction: row;
+    align-items: baseline;
+    background:linear-gradient(to right, #ffffcc 0%, #ff99cc 100%);
     width: 100%;
-    border: none;
-    padding: 2%;
-    border: 1px solid gray;
+    flex-wrap: wrap;
+    border-bottom: 1px solid red;
 }
 
-.input-data input[type='date']{
+.content h3{
+    width: 100%;
+}
+.content p{
     width: 50%;
-    
+    align-items: flex-start;
+    margin: 0;
 }
-
-.list li{
-    display: flexs;
+.content h5{
+    width: 50%;
 }

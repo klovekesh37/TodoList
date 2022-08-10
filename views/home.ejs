@@ -10,17 +10,27 @@
             
             <div class="input-data">
                 <form action="/add-list" method="post">
-                    <label for="Descrip">Description</label>
-                    <input type="text" id="descrip" name="description" required>
-                    <label for="dated">Date</label>
-                    <input type="date" id="dated" name="time" required>
-                    <label for="category">Category</label>
-                    <select name="category" id="category">
-                        <option value="personal">Personal</option>
-                        <option value="school">School</option>
-                        <option value="Work">Work</option>
-                        <option value="other">Other</option>
-                    </select>
+                    <div class="des-input">
+                        <label for="Descrip">Description</label>
+                        <input type="text" id="descrip" name="description" required placeholder="description">
+                    </div>
+                   
+                    
+                   <div class="cat-input">
+                        <label for="category">Select Category</label>
+                        <select name="category" id="category">
+                            <option value="personal">Personal</option>
+                            <option value="school">School</option>
+                            <option value="Work">Work</option>
+                            <option value="other">Other</option>
+                        </select>
+                   </div>
+
+                   <div class="date-input">
+                        <label for="dated">Due Date</label>
+                        <input type="date" id="dated" name="time" required placeholder="Date">
+                    </div>
+                    
                     <button type="submit">Add Task</button>
                 </form>
 
@@ -29,17 +39,18 @@
             <div class="list">
                 <ul>
                     <% for(let i of todo_list){ %>
-                        <li>
+                        <li class="content">
                             <h3>
                                 <%= i.des %>
                             </h3>
                             <p>Date: <%=i.date %></p>
                             <h5><%= i.category %></h5>
+
                             <a href="/delete-contact/?id=<%= i.id %>">
                                 <button>Delete</button>
                             </a>
                         </li>
-    
+                        
                     <%} %>
                 </ul>
             </div>
