@@ -2,7 +2,8 @@ body{
     margin: 0;
     text-align: center;
     background-color: rgb(136, 129, 129);
-    font-family: sans-serif;
+    font-family: "Times New Roman", Times, serif;
+    font-size: 20px;
 }
 
 #centre{
@@ -124,9 +125,14 @@ body{
     margin-left: 40%;
     margin-top: 6%;
     padding: 18px;
-    background-color: rgb(189, 181, 181);
+    background-color: rgba(17, 17, 16, 0.726);
     border: none;
     border-radius: 5%;
+    color: white;
+}
+
+.input-data form button i{
+    margin-right: 2px;
 }
 
 .input-data form button:hover{
@@ -161,17 +167,65 @@ ul{
     background:linear-gradient(to right, #ffffcc 0%, #ff99cc 100%);
     width: 100%;
     flex-wrap: wrap;
-    border-bottom: 1px solid red;
+    border-bottom: 1.5px solid rgb(5, 1, 1);
+    justify-content: space-evenly;
 }
 
-.content h3{
+.content .head-list{
     width: 100%;
+    text-align: start;
+    margin-left: 30px;
+    font-size: 1.5rem;
+    color: rgba(20, 20, 24, 0.925);
+    
 }
-.content p{
-    width: 50%;
-    align-items: flex-start;
-    margin: 0;
+
+.content .head-list h3{
+    margin-bottom: 0;
 }
-.content h5{
+
+.content .due-list{
+    width: 30%;
+    text-align: start;
+    font-size: 1rem;
+    color: rgb(104, 96, 96);
+    font-weight: bold;
+    line-height: 0.5rem;
+    letter-spacing: 1px;
+}
+
+.content .cat-list{
     width: 50%;
+    text-align: end;
+    margin-right: 50px;
+    color: rgba(103, 103, 235, 0.911);
+    font-size: 2rem;
+
+    text-transform: uppercase;
+}
+
+.delete-btn{
+    margin-bottom: 23px;
+    
+}
+
+.delete-btn a button{
+    padding: 8px 14px 14px 8px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: none;
+    background-color: red;
+    color: white;
+    font-weight: 100;
+}
+
+.delete-btn a button i{
+    padding: 2px;
+    margin-right: 2px;
+    transition: 0.2s;
+}
+
+.delete-btn a button:hover{
+    background-color: rgb(194, 21, 21);
+    cursor: pointer;
 }
