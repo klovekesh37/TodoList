@@ -1,3 +1,4 @@
+// configuring the mongosse db 
 const mongoose=require('mongoose');
 
 mongoose.connect("mongodb://localhost/todo_list_app");
